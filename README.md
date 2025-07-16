@@ -1,4 +1,11 @@
-# Mastering JWT Authorization in .NET Core: A Comprehensive Tutorial
+[Back to Main Page](https://mahesh-mavuri.github.io/mahesh-mavuri/)
+
+This is part of series of blogs on JWT and API Documentation
+1. Mastering JWT Authorization in .NET Core: A Comprehensive Tutorial 
+2. Versioning the APIs
+3. Maintaining the API documentation in swagger from comments in C# code
+
+# 1. Mastering JWT Authorization in .NET Core: A Comprehensive Tutorial
 
 JSON Web Tokens (JWTs) provide a secure and efficient way to handle authorization in modern web applications. This tutorial will guide you through setting up a robust JWT authorization system in your .NET Core API, covering general authentication, role-based access control, and the more powerful policy-based authorization.
 
@@ -42,6 +49,7 @@ dotnet new webapi -n JWTSelfAuth
 cd JWTSelfAuth
 ```
 or simply create the .Net Core Web API Project from visual studio as mentioned in the screenshots below.
+
 <img width="484" height="1298" alt="image" src="https://github.com/user-attachments/assets/20d85da3-5b52-4f24-a271-afb3a2763b7c" />
 
 Next, install the necessary NuGet packages:
