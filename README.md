@@ -1,5 +1,3 @@
------
-
 # Mastering JWT Authorization in .NET Core: A Comprehensive Tutorial
 
 JSON Web Tokens (JWTs) provide a secure and efficient way to handle authorization in modern web applications. This tutorial will guide you through setting up a robust JWT authorization system in your .NET Core API, covering general authentication, role-based access control, and the more powerful policy-based authorization.
