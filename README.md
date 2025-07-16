@@ -1,4 +1,4 @@
-[Back to Main Page](https://mahesh-mavuri.github.io/mahesh-mavuri/)
+[Back to Main Page](https://mahesh-mavuri.github.io/Mahesh-Mavuri/)
 
 This is part of series of blogs on JWT and API Documentation
 1. Mastering JWT Authorization in .NET Core: A Comprehensive Tutorial 
