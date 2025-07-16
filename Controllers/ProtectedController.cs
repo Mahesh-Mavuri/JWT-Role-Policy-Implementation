@@ -9,7 +9,14 @@ namespace JWTSelfAuth.Controllers
     [Authorize] // All actions in this controller require authorization
     public class ProtectedController : ControllerBase
     {
-        // ... (GetProtectedData method)
+        [HttpGet]
+        public IActionResult GetProtectedData()
+        {
+            var username = User?.Identity?.Name; // Access the authenticated user's name
+            var role = User?.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value; // Access user roles
+
+            return Ok($"Hello {username}! You are authenticated and your role is: {role}. This is protected data.");
+        }
 
         [HttpGet("admin-only")]
         [Authorize(Roles = "Admin")] // Only users whose JWT contains a ClaimTypes.Role with value "Admin" can access
@@ -33,14 +40,7 @@ namespace JWTSelfAuth.Controllers
         {
             return Ok("This is for managers only.");
         }
-        [HttpGet]
-        public IActionResult GetProtectedData()
-        {
-            var username = User?.Identity?.Name; // Access the authenticated user's name
-            var role = User?.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value; // Access user roles
-
-            return Ok($"Hello {username}! You are authenticated and your role is: {role}. This is protected data.");
-        }
+       
 
        
         [HttpGet("user-or-admin")]
